@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jchess.view.controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="582.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/misc/login.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="163.0" layoutY="30.0" text="jChess">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="296.0" layoutY="480.0" text="by: LordCordlow">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="397.0" prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <Pane layoutX="2.0" prefHeight="500.0" prefWidth="402.0" style="-fx-background-color: #F4A460;">
+               <children>
+                  <Label layoutX="160.0" layoutY="54.0" text="Login">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField" layoutX="103.0" layoutY="160.0" prefHeight="26.0" prefWidth="196.0" promptText="Username" style="-fx-alignment: center;" />
+                  <PasswordField fx:id="passwordTextField" layoutX="104.0" layoutY="254.0" prefHeight="26.0" prefWidth="196.0" promptText="Password" style="-fx-alignment: center;" />
+                  <Button fx:id="loginBtn" layoutX="127.0" layoutY="381.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="32.0" prefWidth="148.0" style="-fx-background-color: #000000; -fx-border-radius: 50px;" text="Login" textFill="WHITE" />
+                  <Label fx:id="errorMessage" alignment="CENTER" layoutX="37.0" layoutY="319.0" prefHeight="18.0" prefWidth="327.0" text="Invalid login. Please try again" visible="false" />
+                  <Button fx:id="registerBtn" layoutX="128.0" layoutY="437.0" mnemonicParsing="false" onAction="#switchToRegister" prefHeight="32.0" prefWidth="148.0" style="-fx-background-color: #000000; -fx-border-radius: 50px;" text="Register" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

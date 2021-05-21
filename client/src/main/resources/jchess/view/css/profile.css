@@ -1,0 +1,12 @@
+.container {
+    -fx-background-color: #F4A460;
+}
+
+.stats-vbox {
+    -fx-spacing: 20px;
+}
+
+.buttons-hbox {
+    -fx-alignment: CENTER-LEFT;
+    -fx-spacing: 85px;
+}

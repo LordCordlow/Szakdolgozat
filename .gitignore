@@ -1,0 +1,6 @@
+client/target/
+client/out/
+server/target/
+server/out/
+client/.idea/
+server/.idea/

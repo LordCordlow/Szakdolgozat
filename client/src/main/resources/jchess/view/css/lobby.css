@@ -1,0 +1,41 @@
+.container {
+    -fx-background-color: #ff963d;
+}
+
+.lobby-list {
+    -fx-background-color: #F4A460;
+}
+
+.lobby-list .list-cell:empty {
+    -fx-border-color: none;
+}
+
+.lobby-list .list-cell {
+    -fx-padding: 10px;
+    -fx-border-color: black;
+    -fx-background-color: #F4A460;
+}
+
+.player-list {
+    -fx-border-color: black;
+}
+
+.player-list .list-cell:empty {
+    -fx-border-color: none;
+}
+
+.player-list .list-cell {
+    -fx-padding: 6px;
+    -fx-border-color: black;
+    -fx-background-color: #f28427;
+}
+
+#no-lobby-label {
+    -fx-font-size: 20px;
+    -fx-text-alignment: CENTER;
+    -fx-alignment: CENTER;
+    -fx-end-margin: 20px;
+}
+
+.lobby-label {
+}
